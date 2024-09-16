@@ -8,3 +8,4 @@ func main() {
 	fmt.Println(a | b)
 }
 //output: 5
+// bitwise & , bitwise | , bitwise ^
