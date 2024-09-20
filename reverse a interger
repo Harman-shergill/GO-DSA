@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+)
+
+func reverseInteger(n int) int {
+	var reversed int
+	for n > 0 {
+		reversed = reversed*10 + n%10
+		n /= 10
+	}
+	return reversed
+}
+
+func main() {
+	fmt.Println(reverseInteger(125)) // Output: 521
+}
