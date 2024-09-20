@@ -8,4 +8,4 @@ func main() {
 	fmt.Println(a | b)
 }
 //output: 5
-// bitwise & , bitwise | , bitwise ^
+// bitwise & , bitwise | , bitwise ^ ,bitwise << a*2^b , bitwise >> a/2^b
