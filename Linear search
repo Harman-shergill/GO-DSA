@@ -1,0 +1,20 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	a := []int{111, 12, 32, 422, 225}
+	s := len(a)
+	target := 32
+	for i := 0; i < s; i++ {
+		if a[i] == target {
+			fmt.Println("found a number of at index :", i)
+			return
+		}
+	}
+	fmt.Println(-1)
+}
+// output: found a number of at index : 2 
+//LINEAR SEARCH
