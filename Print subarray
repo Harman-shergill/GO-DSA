@@ -1,0 +1,20 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	a := []int{1, 2, 3, 4, 5}
+	s := len(a)
+	for i := 0; i < s; i++ {
+		for end := i; end < s; end++ {
+			// Print the subarray from index i to end
+			fmt.Print("Subarray from index ", i, " to ", end, ": ")
+			for j := i; j <= end; j++ {
+				fmt.Print(a[j], " ")
+			}
+			fmt.Println()
+		}
+	}
+} 
